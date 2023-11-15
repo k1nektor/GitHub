@@ -79,6 +79,7 @@ class My_Custom_Widget extends \Elementor\Widget_Base {
                         'terms' => $settings['terms'],
                     ],
                 ],
+                'posts_per_page' => -1 // Додаємо цей параметр, щоб отримати усі пости
             ];
     
             $query = new WP_Query($args);
